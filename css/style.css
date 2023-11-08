@@ -29,6 +29,13 @@ nav {
 }
 
 .jumbotron{
+    padding: 10px 0;
     height: 500px;
     background-color: #1abc9c;
+    color: white;
+}
+
+.image img{
+    display: inline-block;
+    width: 300px;
 }
