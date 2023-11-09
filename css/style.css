@@ -1,12 +1,15 @@
 /*************************************************
     RESET STYLES
  *************************************************/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .width-50 {
@@ -17,6 +20,8 @@
 
 
 /* HEADER STYLE */
+/* ***************************************************************** */
+/* NAVBAR */
 nav {
     min-height: 100px;
     background-color: #2c3e50;
@@ -24,19 +29,26 @@ nav {
     font-weight: bold;
 }
 
-.menu {
-    border: 1px solid #b0b0b0;
-    border-radius: 5px;
-    padding: 0 2px;
+button.navbar-toggler {
+    border-color: white;
 }
 
-.h-100px {
-    height: 100px;
+span.navbar-toggler-icon {
+    filter: invert(1);
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: white;
+}
+
+ul.navbar-nav li.nav-item a {
+    color: white;
+}
+
+
+/* JUMBOTRON */
 .jumbotron {
-    padding: 10px 0;
-    height: 500px;
     background-color: #1abc9c;
     color: white;
 }
@@ -46,25 +58,50 @@ nav {
     width: 300px;
 }
 
-.image img {
+.title{
+    padding: 10px 0;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -3px;
+    text-align: center;
+}
+
+.divide {
+    margin: 10px 0;
+    width: 100%;
+    height: 3px;
+}
+
+.dev{
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+/* ****************************************************************** */
+/* MAIN STYLE */
+/* PORTFOLIO SECTION */
+.portfolio {
+    color: #2c3e50;
+}
+
+.card img {
     display: inline-block;
     width: 100%;
     border-radius: 15px;
 }
 
 
-
-/* MAIN STYLE */
-.portfolio {
-    color: #2c3e50;
-}
-
+/* ABOUT-US SECTION */
 .about-us {
     background-color: #1abc9c;
     color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     border: 1px solid white;
@@ -73,21 +110,26 @@ a{
     border-radius: 10px;
 }
 
-.divide{
-    width: 90%;
-    margin-left: 4px;
-    height: 1px;
+
+
+/* CONTACT ME SECTION */
+.forum{
     background-color: #dcdcdc;
 }
 
-#send{
-    background-color:#1abc9c;
+.info{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#send {
+    background-color: #1abc9c;
     padding: 9px 13px;
 }
 
 
 /* FOOTER STYLE */
-.pre-foot{
+.pre-foot {
     background-color: #3a546d;
     color: white;
 }

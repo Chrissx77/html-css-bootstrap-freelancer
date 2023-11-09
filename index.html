@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Freelancer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="row align-items-center h-100px">
-                    <div class="col-5">
-                        <h4>START BOOTSTRAP</h4>
-                    </div>
-                    <div class="offset-6 col-1 text-end">
-                        <div class="menu"><i class="fa-solid fa-bars fa-xl" style="color: #b0b0b0;"></i></div>
-                    </div>
+
+        <!-- NAVBAR BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h2>START BOOTSTRAP</h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link  active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </nav>
 
         <div class="jumbotron">
@@ -33,11 +46,9 @@
                     <div class="col-12 image-jumbo">
                         <img src="image/avatar.svg" alt="avatar">
                     </div>
-                    <div class="col-12">
-                        <h1>START BOOTSTRAP</h1>
-                    </div>
-                    <div class="col-12">-------*-------</div>
-                    <div class="col-12"><span>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span></div>
+                    <span class="title">START BOOTSTRAP</span>
+                    <div class="divide" style="background-color: #dcdcdc;"></div>
+                    <span class="dev">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
                 </div>
             </div>
         </div>
@@ -47,76 +58,93 @@
 
         <section class="portfolio">
             <div class="container py-5">
-                <div class="row text-center g-4">
+                <div class="row g-4">
+
+                    <span class="title">PORTFOLIO</span>
+                    <div class="divide" style="background-color: #2c3e50;"></div>
                     <div class="col-12">
-                        <h2>PORTFOLIO</h2>
+                        <div class="card">
+                            <img src="image/cabin.png" alt="avatar">
+                        </div>
                     </div>
-                    <div class="col-12">-------*-------</div>
-                    <div class="col-12 image">
-                        <img src="image/cabin.png" alt="avatar">
+
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="image/cake.png" alt="avatar">
+                        </div>
                     </div>
-                    <div class="col-12 image">
-                        <img src="image/cake.png" alt="avatar">
+
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="image/circus.png" alt="avatar">
+                        </div>
                     </div>
-                    <div class="col-12 image">
-                        <img src="image/circus.png" alt="avatar">
+
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="image/game.png" alt="avatar">
+                        </div>
                     </div>
-                    <div class="col-12 image">
-                        <img src="image/game.png" alt="avatar">
+
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="image/safe.png" alt="avatar">
+                        </div>
                     </div>
-                    <div class="col-12 image">
-                        <img src="image/safe.png" alt="avatar">
+
+                    <div class="col-12">
+                        <div class="card">
+                            <img src="image/submarine.png" alt="avatar">
+                        </div>
                     </div>
-                    <div class="col-12 image">
-                        <img src="image/submarine.png" alt="avatar">
-                    </div>
+
                 </div>
             </div>
-
-
         </section>
 
         <section class="about-us">
             <div class="container width-50 py-5">
                 <div class="row g-2  g-2">
-                    <div class="col-12 text-center">
-                        <h3>ABOUT</h3>
+                    <span class="title">ABOUT</span>
+                    <div class="divide" style="background-color: #dcdcdc;"></div>
+                    <div class="col-12">
+                        <p class="left-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio,
+                            culpa!
+                            Necessitatibus possimus dignissimos nobis quis, maiores perspiciatis. Doloremque fugiat,
+                            corrupti molestias nobis neque, ut placeat quis laudantium, possimus minus aut!</p>
                     </div>
-                    <div class="col-12 text-center">
-                        <h3>-------*-------</h3>
+                    <div class="col-12">
+                        <p class="right-paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam
+                            aliquid reiciendis assumenda provident. Aspernatur eligendi tempore adipisci consequuntur,
+                            repellat, vel itaque temporibus nobis ab quia id sapiente animi laborum?
+                        </p>
                     </div>
-                    <div class="col-12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, culpa!
-                        Necessitatibus possimus dignissimos nobis quis, maiores perspiciatis. Doloremque fugiat,
-                        corrupti molestias nobis neque, ut placeat quis laudantium, possimus minus aut!</div>
-                    <div class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam
-                        aliquid reiciendis assumenda provident. Aspernatur eligendi tempore adipisci consequuntur,
-                        repellat, vel itaque temporibus nobis ab quia id sapiente animi laborum?</div>
                 </div>
-                <div class="col-12 text-center py-5"><a href="#"><i class="fa-solid fa-download"
-                            style="color: #ffffff;"></i> Download</a></div>
+                <div class="col-12 text-center py-5"><a href="#">
+                        <i class="fa-solid fa-download" style="color: #ffffff;"></i>
+                        Download</a>
+                </div>
             </div>
         </section>
 
-        <section class="Contact">
+        <section class="contact">
             <div class="container width-50 py-5">
                 <div class="row g-3">
-                    <div class="col-12 text-center"><h3>CONTACT ME</h3></div>
-                    <div class="col-12 text-center">-------*-------</div>
-                    <div class="col-12">Name</div>
-                    <div class="divide"></div>
-                    <div class="col-12">Email Address</div>
-                    <div class="divide"></div>
-                    <div class="col-12">Phone Number</div>
-                    <div class="divide"></div>
-                    <div class="col-12 pb-5">Message</div>
-                    <div class="divide"></div>
-                    <div class="col-12 py-5"><a id="send" href="#"> Send</a></div>
-
+                    <span class="title">CONTACT ME</span>
+                    <div class="divide" style="background-color: #2c3e50;"></div>
+                    <div class="info">Name</div>
+                    <div class="divide forum"></div>
+                    <div class="info">Email Address</div>
+                    <div class="divide forum"></div>
+                    <div class="info">Phone Number</div>
+                    <div class="divide forum"></div>
+                    <div class="info pb-5">Message</div>
+                    <div class="divide forum mt-5"></div>
+                    <div class="info"><a id="send" href="#"> Send</a></div>
                 </div>
-
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -127,14 +155,17 @@
                 <div class="col-12">AROUND THE WEB</div>
                 <div class="col-12 pb-3">SOCIALS</div>
                 <div class="col-12">ABOUT FREEANCER</div>
-                <div class="col-12 pb-3">Freelancer Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quis architecto nesciunt officiis velit</div>
+                <div class="col-12 pb-3">Freelancer Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                    quis architecto nesciunt officiis velit</div>
             </div>
         </section>
     </footer>
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
