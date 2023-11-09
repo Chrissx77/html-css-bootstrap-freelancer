@@ -63,15 +63,13 @@ ul.navbar-nav li.nav-item a {
 
 .title {
     padding: 10px 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: -3px;
     text-align: center;
 }
 
 .divide {
-    margin: 10px 0;
-    width: 100%;
     height: 3px;
 }
 
@@ -87,6 +85,10 @@ ul.navbar-nav li.nav-item a {
 /* PORTFOLIO SECTION */
 .portfolio {
     color: #2c3e50;
+}
+
+.card{
+    border: none;
 }
 
 .card img {
@@ -152,14 +154,58 @@ a {
 
 /* ****************************************************************** */
 /* MEDIA QUERY */
-@media all and (min-width: 524px) {
+/* TABLET VERSION */
+@media all and (min-width: 768px) {
+
+    button.navbar-toggler {
+        display: none;
+    }
 
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
 
-    button.navbar-toggler {
-        display: none;
+    #navbarText{
+        justify-content: end;
+    }
+
+    ul.navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-item{
+        padding: 0 10px;
+    }
+
+    .container-fluid{
+        width: 90%;
+    }
+
+    .about-us .container{
+        width: 80%;
+    }
+
+    .contact .container{
+        width: 80%;
+    }
+
+    .freelance{
+        text-wrap:nowrap;
+    }
+
+    .info-free{
+        font-size: 1rem;
+    }
+
+    .highlight{
+        color: #1bb498;
     }
 }
+
+/* DESKTOP VERSION */
+@media all and (min-width: 992px) {
+    
+    
+}
+
