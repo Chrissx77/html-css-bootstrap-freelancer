@@ -16,7 +16,7 @@ body{
 }
 
 .width-50 {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -48,7 +48,6 @@ span.navbar-toggler-icon {
 ul.navbar-nav li.nav-item a {
     color: white;
 }
-
 
 /* JUMBOTRON */
 .jumbotron {
@@ -149,6 +148,20 @@ a {
     font-size: 1.2rem;
 }
 
+.socials{
+    padding-top: 10px;
+}
+
+.socials span{
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.socials span i{
+    padding: 10px;
+}
+
 
 
 
@@ -201,11 +214,19 @@ a {
     .highlight{
         color: #1bb498;
     }
+    
+    .socials span{
+        padding: 5px 10px;
+    }
+    
+    .socials span i{
+        padding: 5px;
+    }
 }
 
 /* DESKTOP VERSION */
-@media all and (min-width: 992px) {
+/* @media all and (min-width: 992px) {
+
     
-    
-}
+} */
 
